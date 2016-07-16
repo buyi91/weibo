@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GDViewController.h
 //  GDWeibo
 //
 //  Created by 锋之韵 on 16/7/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GDViewController : UITabBarController
 
 @end
-

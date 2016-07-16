@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GDViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = window;
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[GDViewController alloc] init];
     return YES;
 }
 
