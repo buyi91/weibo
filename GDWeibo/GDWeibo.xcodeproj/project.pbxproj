@@ -14,6 +14,10 @@
 		3A3F1B561D3A4E2F0047C6B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F1B541D3A4E2F0047C6B1 /* LaunchScreen.xib */; };
 		3A3F1B621D3A4E2F0047C6B1 /* GDWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1B611D3A4E2F0047C6B1 /* GDWeiboTests.m */; };
 		3A3F1B6D1D3A511D0047C6B1 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */; };
+		3A503F341D3A97A500A1A7BE /* GDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F331D3A97A500A1A7BE /* GDMeViewController.m */; };
+		3A503F371D3A97BC00A1A7BE /* GDMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F361D3A97BC00A1A7BE /* GDMessageViewController.m */; };
+		3A503F3A1D3A97D400A1A7BE /* GDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F391D3A97D400A1A7BE /* GDHomeViewController.m */; };
+		3A503F3D1D3A982300A1A7BE /* GDDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F3C1D3A982300A1A7BE /* GDDiscoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		3A3F1B611D3A4E2F0047C6B1 /* GDWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDWeiboTests.m; sourceTree = "<group>"; };
 		3A3F1B6B1D3A511D0047C6B1 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDViewController.h; path = ../GDViewController.h; sourceTree = "<group>"; };
 		3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDViewController.m; path = ../GDViewController.m; sourceTree = "<group>"; };
+		3A503F321D3A97A500A1A7BE /* GDMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMeViewController.h; sourceTree = "<group>"; };
+		3A503F331D3A97A500A1A7BE /* GDMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMeViewController.m; sourceTree = "<group>"; };
+		3A503F351D3A97BC00A1A7BE /* GDMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMessageViewController.h; sourceTree = "<group>"; };
+		3A503F361D3A97BC00A1A7BE /* GDMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMessageViewController.m; sourceTree = "<group>"; };
+		3A503F381D3A97D400A1A7BE /* GDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHomeViewController.h; sourceTree = "<group>"; };
+		3A503F391D3A97D400A1A7BE /* GDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHomeViewController.m; sourceTree = "<group>"; };
+		3A503F3B1D3A982300A1A7BE /* GDDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDiscoverViewController.h; sourceTree = "<group>"; };
+		3A503F3C1D3A982300A1A7BE /* GDDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDiscoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,14 @@
 			children = (
 				3A3F1B6B1D3A511D0047C6B1 /* GDViewController.h */,
 				3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */,
+				3A503F321D3A97A500A1A7BE /* GDMeViewController.h */,
+				3A503F331D3A97A500A1A7BE /* GDMeViewController.m */,
+				3A503F351D3A97BC00A1A7BE /* GDMessageViewController.h */,
+				3A503F361D3A97BC00A1A7BE /* GDMessageViewController.m */,
+				3A503F381D3A97D400A1A7BE /* GDHomeViewController.h */,
+				3A503F391D3A97D400A1A7BE /* GDHomeViewController.m */,
+				3A503F3B1D3A982300A1A7BE /* GDDiscoverViewController.h */,
+				3A503F3C1D3A982300A1A7BE /* GDDiscoverViewController.m */,
 				3A3F1B491D3A4E2F0047C6B1 /* AppDelegate.h */,
 				3A3F1B4A1D3A4E2F0047C6B1 /* AppDelegate.m */,
 				3A3F1B4F1D3A4E2F0047C6B1 /* Main.storyboard */,
@@ -220,9 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A503F3A1D3A97D400A1A7BE /* GDHomeViewController.m in Sources */,
 				3A3F1B4B1D3A4E2F0047C6B1 /* AppDelegate.m in Sources */,
 				3A3F1B6D1D3A511D0047C6B1 /* GDViewController.m in Sources */,
+				3A503F371D3A97BC00A1A7BE /* GDMessageViewController.m in Sources */,
 				3A3F1B481D3A4E2F0047C6B1 /* main.m in Sources */,
+				3A503F341D3A97A500A1A7BE /* GDMeViewController.m in Sources */,
+				3A503F3D1D3A982300A1A7BE /* GDDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = GDWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = GDWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +443,7 @@
 				3A3F1B671D3A4E2F0047C6B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A3F1B681D3A4E2F0047C6B1 /* Build configuration list for PBXNativeTarget "GDWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +452,7 @@
 				3A3F1B6A1D3A4E2F0047C6B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
