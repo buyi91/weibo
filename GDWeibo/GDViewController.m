@@ -11,6 +11,8 @@
 #import "GDMeViewController.h"
 #import "GDDiscoverViewController.h"
 #import "GDHomeViewController.h"
+#import "GDTabBar.h"
+#import "GDNavigationController.h"
 
 @interface GDViewController ()
 
@@ -20,28 +22,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 初始化tabBar
     [self setupTabBar];
+    //初始化所有子控制器
     [self setupAllChildVc];
-    UITabBarItem *item = [UITabBarItem appearance];
     
+    UITabBarItem *item = [UITabBarItem appearance];
+    // UITabBarItem文字的设置
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-//    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
 }
 
+// 初始化tabBar
 - (void)setupTabBar
 {
-    UITabBar *myTabBar = [[UITabBar alloc] init];
+    GDTabBar *myTabBar = [[GDTabBar alloc] init];
     [self setValue:myTabBar forKey:@"tabBar"];
 }
 
+// 初始化所有子控制器
 - (void)setupAllChildVc
 {
     UIViewController *home = [[GDHomeViewController alloc] init];
@@ -62,7 +67,7 @@
     vc.title = title;
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    GDNavigationController *nav = [[GDNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 

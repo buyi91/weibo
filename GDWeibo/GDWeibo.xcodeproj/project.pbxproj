@@ -14,6 +14,8 @@
 		3A3F1B561D3A4E2F0047C6B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F1B541D3A4E2F0047C6B1 /* LaunchScreen.xib */; };
 		3A3F1B621D3A4E2F0047C6B1 /* GDWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1B611D3A4E2F0047C6B1 /* GDWeiboTests.m */; };
 		3A3F1B6D1D3A511D0047C6B1 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */; };
+		3A4592EA1D3B478E0022B939 /* GDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4592E91D3B478E0022B939 /* GDTabBar.m */; };
+		3A4592ED1D3B97100022B939 /* GDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4592EC1D3B97100022B939 /* GDNavigationController.m */; };
 		3A503F341D3A97A500A1A7BE /* GDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F331D3A97A500A1A7BE /* GDMeViewController.m */; };
 		3A503F371D3A97BC00A1A7BE /* GDMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F361D3A97BC00A1A7BE /* GDMessageViewController.m */; };
 		3A503F3A1D3A97D400A1A7BE /* GDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A503F391D3A97D400A1A7BE /* GDHomeViewController.m */; };
@@ -44,6 +46,10 @@
 		3A3F1B611D3A4E2F0047C6B1 /* GDWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDWeiboTests.m; sourceTree = "<group>"; };
 		3A3F1B6B1D3A511D0047C6B1 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDViewController.h; path = ../GDViewController.h; sourceTree = "<group>"; };
 		3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDViewController.m; path = ../GDViewController.m; sourceTree = "<group>"; };
+		3A4592E81D3B478E0022B939 /* GDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTabBar.h; sourceTree = "<group>"; };
+		3A4592E91D3B478E0022B939 /* GDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDTabBar.m; sourceTree = "<group>"; };
+		3A4592EB1D3B97100022B939 /* GDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDNavigationController.h; sourceTree = "<group>"; };
+		3A4592EC1D3B97100022B939 /* GDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDNavigationController.m; sourceTree = "<group>"; };
 		3A503F321D3A97A500A1A7BE /* GDMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMeViewController.h; sourceTree = "<group>"; };
 		3A503F331D3A97A500A1A7BE /* GDMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMeViewController.m; sourceTree = "<group>"; };
 		3A503F351D3A97BC00A1A7BE /* GDMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMessageViewController.h; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 			children = (
 				3A3F1B6B1D3A511D0047C6B1 /* GDViewController.h */,
 				3A3F1B6C1D3A511D0047C6B1 /* GDViewController.m */,
+				3A4592E81D3B478E0022B939 /* GDTabBar.h */,
+				3A4592E91D3B478E0022B939 /* GDTabBar.m */,
+				3A4592EB1D3B97100022B939 /* GDNavigationController.h */,
+				3A4592EC1D3B97100022B939 /* GDNavigationController.m */,
 				3A503F321D3A97A500A1A7BE /* GDMeViewController.h */,
 				3A503F331D3A97A500A1A7BE /* GDMeViewController.m */,
 				3A503F351D3A97BC00A1A7BE /* GDMessageViewController.h */,
@@ -244,8 +254,10 @@
 				3A3F1B4B1D3A4E2F0047C6B1 /* AppDelegate.m in Sources */,
 				3A3F1B6D1D3A511D0047C6B1 /* GDViewController.m in Sources */,
 				3A503F371D3A97BC00A1A7BE /* GDMessageViewController.m in Sources */,
+				3A4592EA1D3B478E0022B939 /* GDTabBar.m in Sources */,
 				3A3F1B481D3A4E2F0047C6B1 /* main.m in Sources */,
 				3A503F341D3A97A500A1A7BE /* GDMeViewController.m in Sources */,
+				3A4592ED1D3B97100022B939 /* GDNavigationController.m in Sources */,
 				3A503F3D1D3A982300A1A7BE /* GDDiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
