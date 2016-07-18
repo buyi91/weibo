@@ -7,8 +7,11 @@
 //
 
 #import "GDDiscoverViewController.h"
+#import "GDSearchBar.h"
 
 @interface GDDiscoverViewController ()
+
+//@property (nonatomic, weak) GDSearchBar *searchBar;
 
 @end
 
@@ -16,17 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    GDSearchBar *searchBar = [[GDSearchBar alloc] initWithFrame:CGRectMake(0, 0, 250, 30)];
+//    self.searchBar = searchBar;
+    [searchBar becomeFirstResponder];
+    self.navigationItem.titleView = searchBar;
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma -mark -代理方法
+
+// 滚动界面
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+//    [self.searchBar endEditing:YES];
+    [self.view.window endEditing:YES];
 }
 
 #pragma mark - Table view data source

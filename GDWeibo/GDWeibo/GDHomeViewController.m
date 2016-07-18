@@ -7,8 +7,18 @@
 //
 
 #import "GDHomeViewController.h"
+#import "UIBarButtonItem+GD.h"
+#import "GDTitleView.h"
+
+typedef enum {
+    GDHomeViewArrowTypeUp,
+    GDHomeViewArrowTypeDown,
+} GDHomeViewArrowType;
+
 
 @interface GDHomeViewController ()
+
+@property (nonatomic, assign) GDHomeViewArrowType arrowType;
 
 @end
 
@@ -16,17 +26,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 添加左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimageName:@"navigationbar_friendsearch_os7" highImageName:@"navigationbar_friendsearch_highlighted_os7" target:self action:@selector(friendsearch)];
+    // 添加右边按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithimageName:@"navigationbar_pop_os7" highImageName:@"navigationbar_pop_highlighted_os7" target:self action:@selector(pop)];
+    // 添加中间按钮
+    GDTitleView *button = [GDTitleView buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"navigationbar_arrow_down_os7"] forState:UIControlStateNormal];
+    self.arrowType = GDHomeViewArrowTypeDown;
+    [button addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+    button.bounds = CGRectMake(0, 0, 70, 40);
+    [button setTitle:@"首页" forState:UIControlStateNormal];
+    self.navigationItem.titleView = button;
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)clickBtn:(GDTitleView *)btn
+{
+    if (self.arrowType == GDHomeViewArrowTypeUp)
+    {
+        [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_down_os7"] forState:UIControlStateNormal];
+        self.arrowType = GDHomeViewArrowTypeDown;
+    } else {
+        [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up_os7"] forState:UIControlStateNormal];
+        self.arrowType = GDHomeViewArrowTypeUp;
+    }
+}
+
+- (void)pop
+{
+    
+}
+
+- (void)friendsearch
+{
+    
 }
 
 #pragma mark - Table view data source

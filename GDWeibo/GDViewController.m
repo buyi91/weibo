@@ -52,11 +52,12 @@
     UIViewController *home = [[GDHomeViewController alloc] init];
     [self setupChildVc:home title:@"首页" imageName:@"tabbar_home_os7" selectedImageName:@"tabbar_home_selected_os7"];
     
-    UIViewController *discover = [[GDDiscoverViewController alloc] init];
-    [self setupChildVc:discover title:@"发现" imageName:@"tabbar_discover_os7" selectedImageName:@"tabbar_discover_selected_os7"];
-    
     UIViewController *message = [[GDMessageViewController alloc] init];
     [self setupChildVc:message title:@"消息" imageName:@"tabbar_message_center_os7" selectedImageName:@"tabbar_message_center_selected_os7"];
+    
+    UIViewController *discover = [[GDDiscoverViewController alloc] init];
+    [self setupChildVc:discover title:@"广场" imageName:@"tabbar_discover_os7" selectedImageName:@"tabbar_discover_selected_os7"];
+    
     
     UIViewController *me = [[GDMeViewController alloc] init];
     [self setupChildVc:me title:@"我" imageName:@"tabbar_profile_os7" selectedImageName:@"tabbar_profile_selected_os7"];
